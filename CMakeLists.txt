@@ -18,10 +18,17 @@ cmake_minimum_required(VERSION 2.6)
 
 project(QFES)
 
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Widgets REQUIRED)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
 set(QFES_SOURCES
     QFES.cpp
 )
 
 add_executable(qfes ${QFES_SOURCES})
 add_definitions(-Wall)
-target_link_libraries(qfes m)
+target_link_libraries(qfes m Qt5::Widgets)

@@ -16,30 +16,16 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-#include <qt5/QtWidgets/QApplication>
-#include <qt5/QtCore/QTranslator>
-
 #include "MainWindow.h"
+#include "ui_MainWindow.h"
 
-int main(int argc, char **args)
+MainWindow::MainWindow(QApplication* parent, Qt::WindowFlags flags)
+    : m_ui(new Ui::MainWindow)
 {
-    printf("QFES  Copyright (C) 2016  Alexander Kraus\n\
-        This program comes with ABSOLUTELY NO WARRANTY; for details see `Help->About'.\n\
-        This is free software, and you are welcome to redistribute it\n\
-        under certain conditions; see `Help->About' for details.\n");
-    
-    QApplication *app = new QApplication(argc, args);
-    
-    QString locale = QLocale::system().name();
-    QTranslator trans;
-    trans.load(QString("triss_")+locale);
-    app->installTranslator(&trans);
+    m_ui->setupUi(this);
+}
 
-    MainWindow w(app);
-    w.show();
-
-    return app->exec();
+MainWindow::~MainWindow()
+{
+    delete m_ui;
 }

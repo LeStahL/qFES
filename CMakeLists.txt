@@ -27,6 +27,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(QFES_SOURCES
     QFES.cpp
+    MainWindow.cpp
 )
 
 add_executable(qfes ${QFES_SOURCES})

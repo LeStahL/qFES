@@ -30,7 +30,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -54,9 +54,24 @@
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Location</string>
+       </attribute>
+      </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Mode</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Tournament</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Results</string>
        </attribute>
       </widget>
      </widget>

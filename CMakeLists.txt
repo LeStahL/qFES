@@ -29,6 +29,7 @@ set(QFES_SOURCES
     QFES.cpp
     MainWindow.cpp
     RegistrationEntry.cpp
+    RegistrationList.cpp
 )
 
 add_executable(qfes ${QFES_SOURCES})

@@ -16,8 +16,8 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef REGISTRATIONENTRY_H
-#define REGISTRATIONENTRY_H
+#ifndef REGISTRATIONLIST_H
+#define REGISTRATIONLIST_H
 
 #include <qt5/QtWidgets/QGraphicsItem>
 #include <qt5/QtCore/QLocale>
@@ -26,23 +26,19 @@ class QRectF;
 class QStyleOptionGraphicsItem;
 class QPainter;
 
-class RegistrationEntry : public QGraphicsItem
+class RegistrationEntry;
+
+class RegistrationList : public QGraphicsItem
 {
     
 public:
-    RegistrationEntry(QGraphicsItem *parent = 0);
-    virtual ~RegistrationEntry();
+    RegistrationList(QGraphicsItem *parent = 0);
+    virtual ~RegistrationList();
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = 0);
     QRectF boundingRect() const;
 
-    QString m_name;
-    QString m_club;
-    int m_year;
-    int m_number;
-    int m_parity;
-    QLocale m_nation;
-    bool m_there;
-    bool m_paid;
+    QString m_title;
+    QList<RegistrationEntry *> m_entries;
 };
 
 #endif

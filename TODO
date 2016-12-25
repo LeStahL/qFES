@@ -1,0 +1,11 @@
+qFES TODOs
+
+Features:
+-Add registration for judges and participants. Two sections with drag/drop editable list and hover add buttons.
+-Add location drawer where pistes can be added dynamically (which can be used as plan in a flyer)
+-Add Mode editor where blocks represent stages and arrows represent selection
+-Add Tournament editor where results can be entered into standard forms and standings are updated
+-Add Results tab where the full resulting placements are shown.
+
+
+Fixes:

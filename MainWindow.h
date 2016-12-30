@@ -19,8 +19,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <qt5/QtWidgets/QMainWindow>
-#include <qt5/QtWidgets/QApplication>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QApplication>
 
 namespace Ui
 {

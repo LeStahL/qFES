@@ -20,7 +20,7 @@
 
 QRectF RegistrationList::boundingRect() const
 {
-
+    return QRectF(0,0,100,100);
 }
 
 void RegistrationList::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)

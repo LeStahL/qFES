@@ -19,8 +19,8 @@
 #ifndef REGISTRATIONENTRY_H
 #define REGISTRATIONENTRY_H
 
-#include <qt5/QtWidgets/QGraphicsItem>
-#include <qt5/QtCore/QLocale>
+#include <QtWidgets/QGraphicsItem>
+#include <QtCore/QLocale>
 
 class QRectF;
 class QStyleOptionGraphicsItem;

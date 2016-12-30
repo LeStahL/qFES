@@ -18,8 +18,8 @@
 
 #include "RegistrationEntry.h"
 
-#include <qt5/QtWidgets/QStyleOptionGraphicsItem>
-#include <qt5/QtGui/QPainter>
+#include <QtWidgets/QStyleOptionGraphicsItem>
+#include <QtGui/QPainter>
 
 void RegistrationEntry::paint(QPainter *painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {

@@ -14,7 +14,7 @@
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.11s)
 
 project(QFES)
 
@@ -32,6 +32,10 @@ set(QFES_SOURCES
     RegistrationList.cpp
 )
 
+if(CMAKE_BUILD_TOOL MATCHES "(msdev|devenv|nmake)")
+    add_definitions(/W3)
+else()
+    add_definitions(-Wall)
+endif()
 add_executable(qfes ${QFES_SOURCES})
-add_definitions(-Wall)
-target_link_libraries(qfes m Qt5::Widgets)
+target_link_libraries(qfes Qt5::Widgets)

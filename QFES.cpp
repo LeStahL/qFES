@@ -19,8 +19,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <qt5/QtWidgets/QApplication>
-#include <qt5/QtCore/QTranslator>
+#include <QtWidgets/QApplication>
+#include <QtCore/QTranslator>
 
 #include "MainWindow.h"
 

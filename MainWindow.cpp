@@ -18,11 +18,23 @@
 
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
+#include "RegistrationList.h"
+#include "RegistrationEntry.h"
+
+#include <QtGui/QGraphicsView>
 
 MainWindow::MainWindow(QApplication* parent, Qt::WindowFlags flags)
     : m_ui(new Ui::MainWindow)
+    , m_registration_list(new RegistrationList)
 {
     m_ui->setupUi(this);
+    m_ui->graphicsView->setScene(new QGraphicsScene(this));
+    
+    m_registration_list->m_border_size = 4.;
+    ((QGraphicsItem*)m_registration_list)->update();
+//     m_ui->graphicsView().
+//     m_registration_list->resize(m_ui->graphicsView->viewport());
+    m_ui->graphicsView->scene()->addItem((QGraphicsItem*)m_registration_list);
 }
 
 MainWindow::~MainWindow()

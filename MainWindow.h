@@ -22,6 +22,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QApplication>
 
+class RegistrationList;
 namespace Ui
 {
     class MainWindow;
@@ -37,6 +38,7 @@ public:
     
 private:
     Ui::MainWindow *m_ui;
+    RegistrationList *m_registration_list;
 };
 
 #endif

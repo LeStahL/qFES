@@ -36,9 +36,15 @@ public:
     virtual ~RegistrationList();
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = 0);
     QRectF boundingRect() const;
+    void resize(QRectF newsize);
 
     QString m_title;
     QList<RegistrationEntry *> m_entries;
+    
+    int m_width;
+    int m_height;
+    QColor m_line_color;
+    double m_border_size;
 };
 
 #endif
